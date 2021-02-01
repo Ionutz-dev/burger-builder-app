@@ -1,0 +1,66 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* height: 100%; */
+}
+
+.LandingPage {
+  background: url('../../assets/burger-back.jpg') no-repeat center;
+  background-size: cover;
+  position: absolute;
+  top: 40px; /* Header Height */
+  bottom: 0px;
+  width: 100%;
+}
+
+.h1 {
+  text-align: center;
+  margin-top: 2.5em;
+  color: white;
+}
+
+.Info {
+  margin-top: 7em;
+  text-align: center;
+  font-family: Arial;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: white;
+}
+
+.Link {
+  display: inline-block;
+  padding: 15px 35px;
+  border: 0.2em solid #ffffff;
+  margin: 0 0.3em 0.8em 0.8em;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Link:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+@media all and (max-width: 30em) {
+  .Link {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
